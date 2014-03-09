@@ -5,10 +5,13 @@
 	<title>Home</title>
 </head>
 <body>
+
+<jsp:include page="menu.jsp" />
+
+
 <h1>
-	Hello world!  
+	Welcome to the PetStore web application 
 </h1>
 
-<P>  The time on the server is ${serverTime}. </P>
 </body>
 </html>
