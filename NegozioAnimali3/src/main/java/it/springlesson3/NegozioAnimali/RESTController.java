@@ -62,7 +62,9 @@ public class RESTController {
 	@RequestMapping(value="/pet/{id}", method= RequestMethod.PUT)
 	@ResponseStatus(value=HttpStatus.NO_CONTENT)
 	public void updatePet(@PathVariable String id, @RequestBody Pet p){
-		petRepo.saveAndFlush(p);		
+		logger.info(p.getNome()+" "+p.getDataNascita());
+		petRepo.saveAndFlush(p);
+		
 	}
 	
 	
