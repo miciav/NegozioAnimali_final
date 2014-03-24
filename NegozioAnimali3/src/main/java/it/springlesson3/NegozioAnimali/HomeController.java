@@ -28,7 +28,8 @@ public class HomeController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
-	@Autowired
+	
+	//@Autowired
 	private PetDAOJpaRepository petRep;
 	
 	/**
